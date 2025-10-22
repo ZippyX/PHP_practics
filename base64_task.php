@@ -31,7 +31,7 @@ function convert_from_base64($json)
 
 function save_from_decode_base64($data,$file_name)
 {
-    $filePath = "C:/Users/Andrey/OneDrive/Desktop/for_base64/$file_name.jpg";
+    $filePath = __DIR__ . "/for_base64/$file_name.jpg";
     if(file_put_contents($filePath,$data) === false)
     {
         throw new Exception("Не удалось сохранить файл");
