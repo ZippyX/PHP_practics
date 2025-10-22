@@ -1,6 +1,7 @@
 <?php
 
-$filepath = "C:/Users/Andrey/OneDrive/Desktop/temp/щпа/products.json";
+$filepath = __DIR__ . "/products.json";
+//"C:/Users/Andrey/OneDrive/Desktop/temp/щпа/products.json";
 $jsonstring = file_get_contents($filepath);
 $data_from_json = json_decode($jsonstring,true);
 $data = [];
