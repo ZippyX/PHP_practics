@@ -134,8 +134,6 @@ function decompose_date_birth($date_birth)
     $year_of_birth = $date[2];
     $curr_date = date("Y");
     return (int) $curr_date - (int) $year_of_birth;
-    // не учитывается др
-
 
 }
 

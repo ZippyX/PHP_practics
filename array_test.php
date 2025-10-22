@@ -46,7 +46,6 @@ echo "Минимальное значение bot_count : ";
 echo "$min";
 echo "</br>";
 
-//print_r($sorted_data);
 echo "</br>";
 information($sorted_data);
 
@@ -55,7 +54,6 @@ function information($data)
     $all_priorets = [];
     foreach($data as $key => $value)
     {
-        //echo $key;
         $all_priorets[] = $key;
     }
     sort($all_priorets);

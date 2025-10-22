@@ -50,7 +50,7 @@ foreach($result as $key => $value)
 
 function find($price,$name)
 {
-    global $data;   // делаем переменную data глобальной, чтобы не передавать её в функцию
+    global $data; 
     $arr_to_return = [];
     foreach($data as $key => $value)
     {
