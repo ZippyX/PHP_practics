@@ -34,7 +34,7 @@ function save_from_decode_base64($data,$file_name)
     $filePath = __DIR__ . "/for_base64/$file_name.jpg";
     if(file_put_contents($filePath,$data) === false)
     {
-        throw new Exception("Не удалось сохранить файл");
+        throw new Exception("Файл не удалось сохранить");
     }
     else
     {
